@@ -78,8 +78,8 @@ compare_btn.addEventListener('click' , () => {
 
     // Add tiles to the DOM grid element
     tiles.forEach((tile) => {
-        const tile_div = createTile(tile)
-        grid.appendChild(tile_div)
+        const created_tile = createTile(tile)
+        grid.appendChild(created_tile)
     })
 
 

@@ -25,8 +25,6 @@ export default class Human {
         return {
             name : this.name,
             image: 'images/human.png',
-            fact: 'my height is '+this.heightInches + '  ,my weight is '+this.weight +
-                '  ,my diet is '+this.diet,
         }
     }
 }
