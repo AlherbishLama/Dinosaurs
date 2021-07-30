@@ -28,7 +28,7 @@ export default class Dino {
         return {
             name:this.species,
             image:'images/' + this.species.toLowerCase() + '.png',
-            fact : this.species === 'Pigeon' || this.species === 'Pteranodon'? 'All birds are dinosaurs' :this.generateFacts(human)
+            fact : this.species === 'Pigeon' ? 'All birds are dinosaurs' :this.generateFacts(human)
         }
     }
 

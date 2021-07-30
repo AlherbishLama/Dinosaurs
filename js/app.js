@@ -66,10 +66,12 @@ compare_btn.addEventListener('click' , () => {
     const createTile = (tile) => {
         const tile_div = document.createElement('div');
         tile_div.classList.add('grid-item');
-        const tile_ele = `
+        let tile_ele = `
         <h3> ${tile.name}</h3>
-        <img src="./${tile.image}"/>
-        <p>${tile.fact}</p> `
+        <img src="./${tile.image}"/> `
+
+        if(!tile.image.includes('human'))
+            tile_ele = tile_ele.concat(`<p> ${tile.fact}</p>`)
         tile_div.innerHTML = tile_ele;
         return tile_div;
     }
